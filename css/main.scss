@@ -1,0 +1,391 @@
+// SETTINGS ===================================================================
+
+// Colors
+$darkblue:#0057B8;
+$lightblue:#62B5E5;
+$darkgreen:#007A33;
+$lightgreen:#97D700;
+$white:#ffffff;
+$grey:#999999;
+$black:#000000;
+$font-body:Arial, sans-serif;
+
+// Breakpoints
+$bp-small: 576px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-xlarge: 1200px;
+
+
+// Fonts
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('fonts/pn-bold-webfont.woff2') format('woff2'),
+         url('fonts/pn-bold-webfont.woff') format('woff'),
+         url('fonts/pn-bold-webfont.svg') format('svg'),
+         url('fonts/pn-bold-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+// TOOLS ======================================================================
+
+// Media Query Selector Builder
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+/*
+Usage:
+  .component {
+    // Styles for component
+
+    @include respond-to($bp-medium) {
+      // Adjust styles for medium-sized screens
+    }
+  }
+*/
+
+
+
+
+// GENERIC ====================================================================
+
+// Normalize
+@import "normalize.css";
+
+
+html {
+  // Font anti-aliasing
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+// Border Box Reset
+html { box-sizing: border-box;}
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+
+
+
+// ELEMENTS ===================================================================
+
+body {
+  color: $grey;
+  font-family: $font-body;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.3;
+
+  @include respond-to($bp-medium) {
+    font-size: 1.25rem;
+  }
+}
+
+h1 {
+  color: $darkgreen;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+  line-height: 1;
+
+  @include respond-to($bp-medium) {
+    font-size: 3.75rem;
+  }
+
+}
+
+
+
+
+
+
+
+// OBJECTS ====================================================================
+// Wrapper
+.wrap {
+  margin: 0 auto;
+  max-width: calc(100% - 4rem);
+}
+
+
+
+// Buttons
+%btn {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 0.7em 1.2em;
+  border-radius: 1.5em;
+  border: none;
+  text-decoration: none;
+  transition: background ease-out 0.25s;
+  font-family: 'proxima-nova', sans-serif;
+}
+
+%formitem-box {
+  padding: 1.25rem 0;
+}
+
+// Sections
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 576px;
+  margin: 0 auto;
+
+  @include respond-to($bp-medium) {
+    max-width: $bp-medium;
+  }
+
+  @include respond-to($bp-xlarge) {
+    max-width: $bp-xlarge;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+#intro {}
+
+#quiz {}
+
+#result {}
+
+.header {
+  position: relative;
+  bottom: 0;
+  order: 10;
+  text-align: center;
+  margin-top: auto;
+
+  @include respond-to($bp-xlarge) {
+    //width: 100%;
+    position: fixed;
+    margin-left: 160px;
+    //left: 10%;
+  }
+
+}
+
+.top-image {
+  @include respond-to($bp-xlarge) {
+    flex: 0 0 750px;
+    position: fixed;
+  }
+}
+
+.main-cont {
+  @include respond-to($bp-xlarge) {
+    flex: 1;
+    margin-left: 750px;
+    margin-top: 4rem;
+    text-align: left;
+    //width: 25%;
+    //width: calc(100% - 750px);
+  }
+}
+
+.sec-quiz,
+.sec-result {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: block;
+}
+
+.sec-quiz {
+  margin-bottom: 2.5rem;
+}
+
+.branding-logos {
+  padding: 3rem 0 1.5rem 0;
+}
+
+
+
+
+
+// COMPONENTS =================================================================
+
+// Form
+.question {
+  @extend %formitem-box;
+  border-bottom: 1px solid adjust-color($lightblue,$alpha:-.5);
+  > label {
+    display: block;
+    margin: 0 0 1rem 0;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 1rem;
+    color: $darkblue;
+
+    @include respond-to($bp-medium) {
+      font-size: 1.25rem;
+    }
+
+  }
+
+}
+
+.userinfo {
+  //@extend %formitem-box;
+  margin: 1.25rem 0;
+
+  label {
+    display: block;
+    margin: 0 0 1rem 0;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 1rem;
+    color: $darkblue;
+
+    @include respond-to($bp-medium) {
+      font-size: 1.25rem;
+    }
+
+  }
+
+}
+
+.btn {
+  @extend %btn;
+  min-width: 150px;
+  background: $darkgreen;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 1rem;
+
+  &:hover {
+    background: lighten($darkgreen,7%);
+  }
+
+  @include respond-to($bp-medium) {
+    font-size: 1.25rem;
+    min-width: 180px
+  }
+
+}
+
+.btn-start {
+  margin-top: 2rem
+}
+
+.btn-select {
+  @extend %btn;
+  background: #eeeeee;
+  width: 3.5em;
+
+  label {
+    cursor: pointer;
+    font-size: 1rem;
+    color: $black;
+
+    @include respond-to($bp-medium) {
+      font-size: 1.25rem;
+    }
+
+  }
+
+  > input[type="radio"] { display: none; }
+
+  &:hover, &.selected {
+    background: $lightgreen;
+  }
+}
+
+.submit-box {
+ @extend %formitem-box;
+}
+
+.input-box {
+  display: inline-block;
+  min-width: 15rem;
+  padding: 0.75em 1.2em;
+  border-radius: 1.5em;
+  border: 1px solid $lightblue;
+
+  &::placeholder {
+    color: lighten($grey,20%);
+  }
+
+  @include respond-to($bp-xlarge) {
+    min-width: 20rem;
+    font-size: 1rem;
+  }
+
+}
+
+.small-txt {
+  margin: 0;
+  font-size: 0.68rem
+}
+
+.branding-logos {
+  img {
+    max-height: 40px;
+    width: auto;
+    margin: 1rem;
+
+    @include respond-to($bp-medium) {
+      max-height: 48px;
+    }
+
+  }
+
+
+}
+
+
+// Top Image
+
+.top-image {}
+
+.top-image-container {
+  position: relative;
+  width: 375px;
+  height: 314px;
+  background-color: transparent;
+  margin: 0 auto;
+  @include respond-to($bp-medium) {
+    width: 749px;
+    height: 628px;
+  }
+
+}
+
+#b_120929{
+  transform-origin: top left;
+  transform: scale(.5);
+
+  @include respond-to($bp-medium) {transform: scale(1);}
+}
+
+// Animation:
+@import "animation.css";
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.show {
+  display: block;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+

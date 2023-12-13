@@ -1,0 +1,196 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="responsive">
+<div class="container">
+  <!-- Branding Logos -->
+  <header class="header">
+    <div class="branding-logos">
+        <img src="img/logo-breathe.png" alt="Breathe Souther California Logo">
+        <img src="img/logo-aafa.png" alt="Asthma and Allergy Foundation of America Logo">
+    </div>
+  </header>
+  <!-- Top Image -->
+  <div class="top-image">
+    <div class="top-image-container">
+  <div id="b_120929">
+    <div style="display:none;width:246px;height:230px;" id="el_120928" class="js-bnfy">
+      <img id="img_120928" class="bnfy-enter" alt="top_shape" width="246" height="230" src="img/anim/77c3597a4004a51e230a6fe874606e8c.svg" />
+    </div>
+    <div style="display:none;width:308px;height:277px;" id="el_120927" class="js-bnfy">
+      <img id="img_120927" class="bnfy-enter" alt="middle_shape" width="308" height="277" src="img/anim/ae71d4bf97edd1a05ddda4a87627f403.svg" />
+    </div>
+    <div style="display:none;width:383px;height:331px;" id="el_120919" class="js-bnfy">
+      <img id="img_120919" class="bnfy-enter" alt="mask_shape" width="383" height="331" src="img/anim/9ee7563d6a4ab1c86eb201c6086d880f.png" />
+    </div>
+    <div style="display:none;width:749px;height:628px;" id="el_120930" class="js-bnfy">
+      <img id="img_120930" class="bnfy-enter" alt="stripe_shape" width="749" height="628" src="img/anim/5160b7bc884fe6da072bea8f367c862f.svg" />
+    </div>
+    <div style="display:none;width:480px;height:403px;" id="el_120634" class="js-bnfy">
+      <img id="img_120634" class="bnfy-enter" alt="back_shape" width="480" height="403" src="img/anim/7aa9f3af067fecab8b84909ff6ade471.svg" />
+    </div>
+    <div style="display:none;width:749px;height:628px;" id="el_120929" class="js-bnfy">
+      <img id="img_120929" class="bnfy-enter" alt="main_img-anim" width="749" height="628" src="img/anim/stripe_shape.png" />
+    </div>
+  </div>
+</div>
+    <script type="text/javascript">(function () { function onImagesLoaded(container, event) { var preloads = []; preloads.push.apply(preloads, container.getElementsByTagName("img")); preloads.push.apply(preloads, container.getElementsByTagName("lottie-player")); preloads.push.apply(preloads, container.getElementsByTagName("video")); var loaded = preloads.length; for (var i = 0; i < preloads.length; i++) { var tag = preloads[i].tagName.toLowerCase(); if(tag === "lottie-player") { preloads[i].addEventListener("ready", function() { loaded--; if (loaded == 0) { event(); } }); } else if(tag === "video") { preloads[i].addEventListener('loadeddata', function() { loaded--; if (loaded == 0) { event(); } }, false); } else if(tag === "img") { if (preloads[i].complete) { loaded--; } else { preloads[i].addEventListener("load", function() { loaded--; if (loaded == 0) { event(); } }); } if (loaded == 0) { event(); } } } } onImagesLoaded(document.getElementById("b_120929"), function() { var elements = document.getElementById("b_120929").getElementsByClassName('js-bnfy'); for (var i=0; i < elements.length; i++) { elements[i].style.display = 'block'; } var playCount = 0; var lastPlay = false; function handleExits() {var el_img_120928 = document.getElementById("img_120928");
+    var el_img_120927 = document.getElementById("img_120927");
+    var el_img_120919 = document.getElementById("img_120919");
+    var el_img_120930 = document.getElementById("img_120930");
+    var el_img_120634 = document.getElementById("img_120634");
+    var el_img_120929 = document.getElementById("img_120929");
+    } handleExits(); setInterval(function () {
+    playCount = playCount + 1;
+    lastPlay = playCount === 0;
+    replayAnimations(); }, 5000); function replayAnimations() { var banner = document.getElementById("b_120929"); var elements = banner.getElementsByClassName('js-bnfy'); for (var i = 0; i < elements.length; i++) { elements[i].style.display = 'none'; void elements[i].offsetWidth; elements[i].style.display = 'block'; } handleExits(); } });})();</script> <noscript>
+    <style>#b_120929 div{display:block!important;}
+    </style></noscript>
+  </div>
+
+  <div class="main-cont">
+
+  <!-- Intro Section -->
+    <section id="intro" class="sec-intro">
+      <div class="intro-content wrap">
+          <h1>Toma un respiro</h1>
+          <p>Si tu, o un ser querido de <strong>6 años o más</strong>, han sido diagnosticados con asma y residen en el condado de <strong>Los Angeles</strong>, descubre si califican para recibir un paquete de productos para respirar mejor por valor de <strong>$500 dólares</strong>.</p>
+          <button id="startButton" class="btn btn-start">Iniciar</button>
+      </div>
+  </section>
+
+  <!-- Quiz Section -->
+    <section id="quiz" class="hidden sec-quiz">
+      <form id="quizForm" class="quiz-form wrap">
+          <!-- Questions go here -->
+          <div class="question">
+              <label for="q1">¿Vives en el condado de Los Ángeles?</label>
+              <div>
+                  <div class="btn-select">
+                    <input type="radio" id="yes1" name="q1" value="Yes">
+                    <label for="yes1">Si</label></div>
+                  <div class="btn-select">
+                    <input type="radio" id="no1" name="q1" value="No">
+                    <label for="no1">No</label>
+                  </div>
+              </div>
+          </div>
+          <div class="question">
+              <label for="q2">¿Ha sido diagnosticado con asma?</label>
+              <div>
+                  <div class="btn-select"><input type="radio" id="yes2" name="q2" value="Yes">
+                  <label for="yes2">Si</label></div>
+                  <div class="btn-select">
+                    <input type="radio" id="no2" name="q2" value="No">
+                    <label for="no2">No</label>
+                  </div>
+              </div>
+          </div>
+          <div class="question">
+              <label for="q3">¿Estás dispuesto a participar en 3 consultas remotas o presenciales?</label>
+              <div>
+                  <div class="btn-select">
+                    <input type="radio" id="yes3" name="q3" value="Yes">
+                    <label for="yes3">Si</label>
+                  </div>
+                  <div class="btn-select">
+                    <input type="radio" id="no3" name="q3" value="No">
+                    <label for="no3">No</label>
+                  </div>
+              </div>
+          </div>
+          <div class="question">
+              <label for="q4">¿Estás dispuesto a completar 4 encuestas?</label>
+              <div>
+                  <div class="btn-select">
+                    <input type="radio" id="yes4" name="q4" value="Yes">
+                    <label for="yes4">Si</label>
+                  </div>
+                  <div class="btn-select">
+                    <input type="radio" id="no4" name="q4" value="No">
+                    <label for="no4">No</label>
+                  </div>
+              </div>
+          </div>
+          <div class="question">
+              <label for="q5">¿Estás listo para comenzar a respirar mejor?</label>
+              <div>
+                  <div class="btn-select">
+                    <input type="radio" id="yes5" name="q5" value="Yes">
+                    <label for="yes5">Si</label>
+                  </div>
+                  <div class="btn-select">
+                    <input type="radio" id="no5" name="q5" value="No">
+                    <label for="no5">No</label>
+                  </div>
+              </div>
+          </div>
+
+          <div class="userinfo">
+            <label for="fullName">Tu nombre*</label>
+            <input type="text" id="fullName" class="input-box" name="fullName" placeholder="Nombre" required>
+          </div>
+
+          <div class="userinfo">
+            <label for="email">Tu email*</label>
+            <input type="email" id="email" class="input-box" name="email" placeholder="Email" required>
+          </div>
+
+          <div class="userinfo">
+            <label for="phone">Tu teléfono</label>
+            <input type="tel" id="phone" class="input-box" name="phone" placeholder="Teléfono">
+          </div>
+          <p class="small-txt">*Requerido</p>
+
+          <div class="submit-box">
+          <button type="submit" class="btn btn-submit">Enviar</button>
+
+      </form>
+  </section>
+
+  <!-- Result Section -->
+    <section id="result" class="hidden sec-result">
+      <div class="intro-content wrap">
+          <h1>Gracias por tu participación</h1>
+          <p>Has dado un <strong>gran paso</strong> en pro de tu salud. Pronto te estaremos contactando para culminar tu proceso de calificación.</p>
+      </div>
+  </section>
+
+  </div>
+
+</div>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main-min.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
