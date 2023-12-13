@@ -39,7 +39,8 @@
     }, 10);
   });
 
-  btnSubmit.addEventListener('click', function(){
+  btnSubmit.addEventListener('click', function(e){
+    e.preventDefault();
     secQuiz.classList.add('hidden');
     secResult.classList.remove('hidden');
     setTimeout(function() {
