@@ -58,6 +58,14 @@ h1 {
   }
 }
 
+h3 {
+  color: #007A33;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.75rem;
+}
+
 .wrap {
   margin: 0 auto;
   max-width: calc(100% - 4rem);
@@ -110,6 +118,7 @@ h1 {
   .header {
     position: fixed;
     margin-left: 160px;
+    z-index: 10;
   }
 }
 
@@ -176,6 +185,16 @@ h1 {
   }
 }
 
+.form-alert {
+  background: #ecffbe;
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem 0 0;
+  border-radius: 8px;
+  border: 2px solid #d5ff71;
+  font-size: 1rem;
+  color: #000000;
+}
+
 .btn {
   min-width: 150px;
   background: #007A33;
@@ -234,6 +253,24 @@ h1 {
     min-width: 20rem;
     font-size: 1rem;
   }
+}
+
+.sec-ttl {
+  margin: 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(98, 181, 229, 0.5);
+}
+
+@media (min-width: 768px) {
+  .response-box h3 {
+    margin-top: 2em;
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+  }
+}
+.response-box span {
+  color: #0057B8;
 }
 
 .small-txt {

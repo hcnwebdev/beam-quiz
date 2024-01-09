@@ -74,104 +74,95 @@
     <section id="intro" class="sec-intro">
       <div class="intro-content wrap">
           <h1>Toma un respiro</h1>
-          <p>Si t&uacute;, o un ser querido de <strong>6 años o más</strong>, han sido diagnosticados con asma y residen en el condado de <strong>Los Angeles</strong>, descubre si califican para recibir un paquete de productos para respirar mejor por valor de <strong>$500 dólares</strong>.</p>
+          <p>Si t&uacute;, o un ser querido de <strong>6 años o más</strong>, han sido diagnosticados con asma y residen en el condado de <strong>Los Angeles</strong>, descubre si califican para recibir un paquete de productos para ayudarte a respirar mejor por valor de <strong>$500 dólares</strong>.</p>
           <button id="startButton" class="btn btn-start">Iniciar</button>
       </div>
   </section>
 
   <!-- Quiz Section -->
     <section id="quiz" class="hidden sec-quiz">
+
       <form id="quizForm" class="quiz-form wrap">
+        <h3 class="sec-ttl">&iquest;Est&aacute;s listo para comenzar a respirar mejor?</h3>
           <!-- Questions go here -->
           <div class="question">
-              <label for="q1">¿Vives en el condado de Los Ángeles?</label>
+              <label for="q1">¿Vives en el condado de Los Ángeles?*</label>
               <div>
                   <div class="btn-select">
-                    <input type="radio" id="yes1" name="q1" value="Yes">
+                    <input type="radio" id="yes1" value="Yes" name="entry.366340186" >
                     <label for="yes1">Si</label></div>
                   <div class="btn-select">
-                    <input type="radio" id="no1" name="q1" value="No">
+                    <input type="radio" id="no1" value="No" name="entry.366340186" >
                     <label for="no1">No</label>
                   </div>
               </div>
           </div>
           <div class="question">
-              <label for="q2">¿Ha sido diagnosticado con asma?</label>
+              <label for="q2">¿Ha sido diagnosticado con asma?*</label>
               <div>
-                  <div class="btn-select"><input type="radio" id="yes2" name="q2" value="Yes">
-                  <label for="yes2">Si</label></div>
                   <div class="btn-select">
-                    <input type="radio" id="no2" name="q2" value="No">
+                    <input type="radio" id="yes2" value="Yes" name="entry.1824880050" >
+                    <label for="yes2">Si</label></div>
+                  <div class="btn-select">
+                    <input type="radio" id="no2" value="No" name="entry.1824880050" >
                     <label for="no2">No</label>
                   </div>
               </div>
           </div>
           <div class="question">
-              <label for="q3">¿Estás dispuesto a participar en 3 consultas remotas o presenciales?</label>
+              <label for="q3">¿Estás dispuesto a participar en 3 consultas remotas o presenciales?*</label>
               <div>
                   <div class="btn-select">
-                    <input type="radio" id="yes3" name="q3" value="Yes">
+                    <input type="radio" id="yes3" value="Yes" name="entry.543187456" >
                     <label for="yes3">Si</label>
                   </div>
                   <div class="btn-select">
-                    <input type="radio" id="no3" name="q3" value="No">
+                    <input type="radio" id="no3" value="No" name="entry.543187456" >
                     <label for="no3">No</label>
                   </div>
               </div>
           </div>
           <div class="question">
-              <label for="q4">¿Estás dispuesto a completar 4 encuestas?</label>
+              <label for="q4">¿Estás dispuesto a completar 4 encuestas?*</label>
               <div>
                   <div class="btn-select">
-                    <input type="radio" id="yes4" name="q4" value="Yes">
+                    <input type="radio" id="yes4" value="Yes" name="entry.535492766" >
                     <label for="yes4">Si</label>
                   </div>
                   <div class="btn-select">
-                    <input type="radio" id="no4" name="q4" value="No">
+                    <input type="radio" id="no4" value="No" name="entry.535492766" >
                     <label for="no4">No</label>
-                  </div>
-              </div>
-          </div>
-          <div class="question">
-              <label for="q5">¿Estás listo para comenzar a respirar mejor?</label>
-              <div>
-                  <div class="btn-select">
-                    <input type="radio" id="yes5" name="q5" value="Yes">
-                    <label for="yes5">Si</label>
-                  </div>
-                  <div class="btn-select">
-                    <input type="radio" id="no5" name="q5" value="No">
-                    <label for="no5">No</label>
                   </div>
               </div>
           </div>
 
           <div class="userinfo">
             <label for="fullName">Tu nombre*</label>
-            <input type="text" id="fullName" class="input-box" name="fullName" placeholder="Nombre" required>
+            <input type="text" id="fullName" class="input-box" name="entry.363822585" placeholder="Nombre" required>
           </div>
 
           <div class="userinfo">
             <label for="email">Tu email*</label>
-            <input type="email" id="email" class="input-box" name="email" placeholder="Email" required>
+            <input type="email" id="email" class="input-box" name="entry.1234359850" placeholder="Email" required>
           </div>
 
           <div class="userinfo">
             <label for="phone">Tu teléfono</label>
-            <input type="tel" id="phone" class="input-box" name="phone" placeholder="Teléfono">
+            <input type="tel" id="phone" class="input-box" name="entry.1617082906" placeholder="Teléfono">
           </div>
           <p class="small-txt">*Requerido</p>
+          <div class="form-msj"></div>
 
           <div class="submit-box">
-          <button type="submit" class="btn btn-submit">Enviar</button>
+          <button type="button" class="btn btn-submit">Enviar</button>
 
       </form>
   </section>
 
   <!-- Result Section -->
     <section id="result" class="hidden sec-result">
-      <div class="intro-content wrap">
-          <h1>Gracias por tu participación</h1>
+      <div class="intro-content wrap response-box">
+          <h1>Gracias por tu participación.</h1>
           <p>Has dado un <strong>gran paso</strong> en pro de tu salud. Pronto te estaremos contactando para culminar tu proceso de calificación.</p>
       </div>
   </section>
@@ -182,6 +173,7 @@
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main-min.js"></script>
 
