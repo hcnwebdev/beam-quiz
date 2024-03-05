@@ -111,6 +111,17 @@ h3 {
   line-height: 1.75rem;
 }
 
+// Links
+
+a {
+  color: $darkblue;
+  transition: all .3s ease;
+
+  &:hover {
+    color: darken($darkblue,15%);
+  }
+}
+
 
 
 // OBJECTS ====================================================================
@@ -213,9 +224,7 @@ h3 {
   margin-bottom: 2.5rem;
 }
 
-.branding-logos {
-  padding: 3rem 0 1.5rem 0;
-}
+
 
 
 
@@ -366,6 +375,15 @@ h3 {
 }
 
 .branding-logos {
+  padding: 3rem 0 1.5rem 0;
+
+  @include respond-to($bp-xlarge) {
+    padding: 0.25rem 0.5rem;
+    background: #ffffff;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+  }
+
   img {
     max-height: 40px;
     width: auto;
@@ -374,11 +392,10 @@ h3 {
     @include respond-to($bp-medium) {
       max-height: 48px;
     }
-
   }
 
-
 }
+
 
 
 // Top Image
@@ -425,3 +442,50 @@ h3 {
     opacity: 1;
 }
 
+
+// POLICY Class ---------------------------------------------------------------
+
+.policy {
+
+  h2 {
+    color: $darkgreen;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.75rem;
+  }
+
+  .header {
+    position: relative;
+    bottom: 0;
+    order: 10;
+    text-align: center;
+    margin-top: auto;
+
+    @include respond-to($bp-xlarge) {
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 0;
+      text-align: center;
+    }
+
+  }
+
+  .main-cont {
+    text-align: left;
+    @include respond-to($bp-xlarge) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3rem;
+      max-width: 920px;
+    }
+  }
+
+}
+
+.policy-text {
+  margin-top: 2rem;
+  font-size: .875rem;
+}

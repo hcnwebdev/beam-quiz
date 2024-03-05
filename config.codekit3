@@ -33,12 +33,28 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/.nova\/Publishing\/HCN Clients.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.nova\/Publishing\/HCN Clients-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/404.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/404.html",
+      "oF" : 0
+    },
+    "\/assets\/breathesocal-about_us-spanish.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/breathesocal-about_us-spanish.pdf",
       "oF" : 0
     },
     "\/browserconfig.xml" : {
@@ -120,9 +136,9 @@
       "pg" : 0
     },
     "\/css\/main.scss" : {
-      "aP" : 0,
+      "aP" : 1,
       "bl" : 0,
-      "co" : 0,
+      "co" : 1,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -319,9 +335,9 @@
       "iS" : 4029,
       "oA" : 0,
       "oAP" : "\/icon.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oF" : 1,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
@@ -438,7 +454,7 @@
       "rq" : 75
     },
     "\/index.html" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
@@ -513,6 +529,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/policy.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/policy.html",
+      "oF" : 0
+    },
     "\/robots.txt" : {
       "cB" : 0,
       "ft" : 8192,
@@ -535,8 +559,8 @@
       "oA" : 0,
       "oAP" : "\/tile-wide.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
@@ -547,12 +571,12 @@
       "iS" : 3482,
       "oA" : 0,
       "oAP" : "\/tile.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oF" : 1,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
-      "q" : 90,
+      "q" : 80,
       "rq" : 75
     }
   },

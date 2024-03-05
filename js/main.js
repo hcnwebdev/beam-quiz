@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const noQualMsj = '<div class="intro-content wrap response-box">' +
   '<h1>Gracias por tu participación e interés.</h1>' +
   '<p>El programa de <strong>Breathe SoCal</strong> solamente está disponible para residentes del condado de <strong>Los Ángeles</strong>.</p>' +
+  '<p>Para información sobre otros programas para pacientes con asma en California, <strong><a href="https://rampasthma.org/wp-content/uploads/2023/08/AHVP-directory-by-county-Dec-2023-final.pdf" target="_blank">haz clic aquí</a></strong>.</p>' +
   '</div>';
 
 
