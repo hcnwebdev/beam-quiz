@@ -16,9 +16,29 @@
   <link rel="apple-touch-icon" href="icon.png?ckcachebust=583F77B3DFEA86FC1A959BD080B420B9">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/main.css?ckcachebust=D21A6EC82A505A3A48360A8476BFF1FA">
+  <link rel="stylesheet" href="css/main.css?ckcachebust=BFC5B0F0B4D4A4697FF096D60ADBFAC9">
 
   <meta name="theme-color" content="#ffffff">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '336819852175641');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=336819852175641&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+
 </head>
 
 <body class="responsive">
@@ -76,6 +96,7 @@
           <h1>Toma un respiro</h1>
           <p>Si t&uacute;, o un ser querido de <strong>6 años o más</strong>, han sido diagnosticados con asma y residen en el condado de <strong>Los &Aacute;ngeles</strong>, descubre si califican para un programa que ofrece un paquete de productos por valor de <strong>$500 dólares</strong> para ayudarte a respirar mejor.</p>
           <button id="startButton" class="btn btn-start">Iniciar</button>
+          <p>Para llamar, haz clic aquí: <a href="tel:3235563784" class="phone-link">(323) 556-3784</a></p>
       </div>
   </section>
 
@@ -142,11 +163,6 @@
           </div>
 
           <div class="userinfo">
-            <label for="email">Tu email*</label>
-            <input type="email" id="email" class="input-box" name="entry.1234359850" placeholder="Email" required>
-          </div>
-
-          <div class="userinfo">
             <label for="phone">Tu teléfono</label>
             <input type="tel" id="phone" class="input-box" name="entry.1617082906" placeholder="Teléfono">
           </div>
@@ -175,16 +191,18 @@
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js?ckcachebust=B90255CF04B71646899002BE50EA384B"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js?ckcachebust=728586588" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js?ckcachebust=732550867" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="js/plugins.js?ckcachebust=9F79A1D65B9B6980199C81BACE08CCC2"></script>
-  <script src="js/main-min.js?ckcachebust=541A4B65CFB6473C2E289B6E73ED55DA"></script>
+  <script src="js/main-min.js?ckcachebust=954441E8482F475B76A64D67C4D05C05"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js?ckcachebust=728586588" async></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3PZ4VBD5N&ckcachebust=732550867"></script>
+  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-S3PZ4VBD5N'); </script>
 </body>
 
 </html>

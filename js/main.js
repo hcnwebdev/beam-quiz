@@ -128,10 +128,12 @@ function isValidPhoneNumber(phoneNumber) {
 }
 
 
+
 // Use this function in your submitForm function
 function submitForm() {
     var data = {},
-        requiredFields = ['entry.366340186', 'entry.1824880050', 'entry.543187456', 'entry.535492766', 'entry.363822585', 'entry.1234359850'];
+        requiredFields = ['entry.366340186', 'entry.1824880050', 'entry.543187456', 'entry.535492766', 'entry.363822585'];
+        //requiredFields = ['entry.366340186', 'entry.1824880050', 'entry.543187456', 'entry.535492766', 'entry.363822585', 'entry.1234359850'];
 
     // Radio elements set
     data['entry.366340186'] = getValueFromRadio('entry.366340186'); // in LA
@@ -141,20 +143,25 @@ function submitForm() {
 
     // Text input data
     data['entry.363822585'] = document.getElementsByName('entry.363822585')[0].value.trim(); // Name
-    data['entry.1234359850'] = document.getElementsByName('entry.1234359850')[0].value.trim(); // Email
+    data['entry.1234359850'] = "Not required"; // Email
     data['entry.1617082906'] = document.getElementsByName('entry.1617082906')[0].value.trim(); // Phone
+    //data['entry.1234359850'] = document.getElementsByName('entry.1234359850')[0].value.trim(); // Email
 
     // Check for required fields and email format
     if (!areRequiredFieldsFilled(data, requiredFields)) {
       formMsj.innerHTML = '<div class="form-alert"><p>Por favor complete los campos requeridos</p>';
         return;
-    } else if (!isValidEmail(data['entry.1234359850'])) {
-      formMsj.innerHTML = '<div class="form-alert"><p>Por favor introduzca un email válido</p>';
-        return;
+
     } else if (!isValidPhoneNumber(data['entry.1617082906'])) {
       formMsj.innerHTML = '<div class="form-alert"><p>Por favor introduzca un número válido</p>';
         return;
     }
+
+    /* Email Validator
+    } else if (!isValidEmail(data['entry.1234359850'])) {
+    formMsj.innerHTML = '<div class="form-alert"><p>Por favor introduzca un email válido</p>';
+      return;
+      */
 
     // Set the end message if user doesn't qualify
     if (data['entry.366340186'] == 'No') { secResult.innerHTML = noQualMsj; }
